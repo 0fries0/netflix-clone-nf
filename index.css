@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family : 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.container {
+  background-color: aqua;
+  min-width: 320px;
+}
+/* FIRST SECTION */
+.showcase {
+  height: 100vh;
+  min-height : 530px;
+  min-width: 320px;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/8f3e38a9-1c2c-4818-99b5-2d9bdff9ad1d/96d29058-fe9b-4f8e-aa49-4c7af385934b/IN-en-20220124-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+    no-repeat center center/cover;
+}
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  min-height : 530px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.showcase header {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  z-index: 2;
+  position: relative;
+}
+
+.showcase header img {
+  width: 120px;
+  cursor : pointer;
+}
+
+.sign-in-btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #e50914;
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.showcase--hero {
+  margin: auto;
+  margin-top: 100px;
+  width: 550px;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  height : 100%;
+}
+
+.showcase--hero h1 {
+  font-size: 3.125rem;
+  margin-bottom: 10px;
+}
+
+.showcase--hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.showcase--hero h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.showcase--form {
+  display: flex;
+  width: 100%;
+}
+
+.showcase--form input {
+  width: 70%;
+  height: 50px;
+  padding-left: 20px;
+  border: none;
+}
+
+.showcase--form button {
+  width: 30%;
+  background-color: #e50914;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* END OF FIRST SECTION */
+
+/* JUMBOTRON  STARTS*/
+
+.card {
+    margin: auto 0;
+    border-top : 5px solid #333;
+    background-color: black;
+    position: relative;
+}
+
+.card-content{
+    display : flex;
+    height : 300px;
+    align-items: center;
+    width : 80%;
+    height : 400px;
+    margin : 0 auto;
+    justify-content: space-between;
+}
+
+.card-text {
+    width : 45%;
+    color  :white;
+    word-wrap: break-word;
+}
+
+.card-text h1{
+    font-size :2.5rem;
+    margin-bottom : 10px;
+}
+.card-text h2{
+    font-size : 1.5rem;
+    font-weight  :500;
+}
+.card.third {
+    border-bottom : 5px solid #333;
+}
+
+.img-container {
+    width  :45%;
+    display  :flex;
+    justify-content: flex-end;
+}
+
+.card-content img{
+    width : 400px;
+}
+.card-content.two img{
+    width : 200px;
+}
+
+.card-content.two, .card-content.two .img-container{
+    flex-direction: row-reverse;
+}
+
+
+/* JUMBOTRON ENDS */
+
+/* FAQ STARTS */
+.faq-container{
+    margin :0;
+    background-color: black;
+    color : white;
+}
+.faq {
+    width : 60%;
+    margin : 0 auto;
+    padding-top  : 50px;
+    color :white;
+    text-align: center;
+    padding-bottom : 50px;
+}
+.faq--header {
+    text-align: center;
+    font-size : 2.5rem;
+}
+.faq img{
+    width : 20px;
+    filter : invert(1);
+}
+
+.questions-list{
+    margin-top: 50px;
+}
+.questions-list li{
+    background-color: #303030;
+    list-style: none;
+    text-align: left;
+    font-size : 1.5rem;
+    margin-bottom : 7px;
+    cursor : pointer;
+}
+.questions-list li .button{
+    display : flex;
+    justify-content: space-between;
+    height : 65px;
+    align-items: center;
+    padding : 0 20px;
+}
+.questions-list li .answer{
+    border-top : 1px solid black;
+    padding : 20px 20px;
+    background-color: #303030;
+
+}
+.faq h4 {
+    margin-bottom : 15px;
+    font-size : 1.3rem;
+    margin-top : 50px;
+}
+.closed{
+   display : none;
+   
+}
+
+
+
+/* FAQ ENDS */
+
+/* FOOTER STARTS */
+
+
+.foot {
+    position: relative;
+    border-top : 5px solid #333;
+    background-color: black;
+    color : #757575;
+    min-width : 320px;
+    width : 100%;
+}
+
+.footer {
+    width : 80%;
+    margin : 0 auto;
+    padding-bottom : 50px;
+}
+.footer p{
+    margin-bottom : 50px;
+    margin-top : 100px;
+}
+.footer-cols {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+a{
+    text-decoration: none;
+    font-weight  :400;
+}
+
+.footer-cols ul {
+    list-style: none;
+    padding : 0;
+    display : flex;
+    flex-direction: column;
+    padding-bottom : 0.5em;
+    padding-right : 2.3em;
+}
+
+
+.footer-cols li{
+    padding-bottom : 1em;
+}
+.footer-cols li a{
+    
+    color : #757575;
+}
+
+/* FOOTER ENDS */
+
+
+/*media-queries*/
+
+@media (max-width: 950px) {
+  .showcase header img {
+    width: 100px;
+  }
+  .showcase--hero {
+    width: 500px;
+    margin-top : 30px;
+  }
+  
+  .showcase--form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .showcase--form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .showcase--form button {
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5em 0.6em;
+    border-radius: 4px;
+  }
+  .card { 
+      height : 100vh;
+      display  :flex;
+  }
+  .card-content, .card-content.two {
+      flex-direction : column;
+      text-align : center;
+      margin : auto;
+  }
+  .card-text {
+      width : 100%;
+  }
+  .img-container {
+      width : 400px;
+      justify-content: center;
+  }
+ 
+    .faq{
+        width : 80%;}
+  }
+
+
+
+@media (max-width: 740px) {
+  .showcase--hero {
+    width: 450px;
+  }
+  .showcase--hero h1 {
+    font-size: 3rem;
+  }
+  .showcase--hero h2 {
+    font-size: 1.8rem;
+  }
+  .showcase--hero h3 {
+    font-size: 1rem;
+  }
+  .showcase--form input {
+    height: 40px;
+  }
+  
+}
+
+@media (max-width: 550px) {
+  .showcase header {
+    padding: 0 30px;
+  }
+  .sign-in-btn {
+    font-size: 1rem;
+  }
+  .showcase {
+    height: 450px;
+  }
+  .showcase--hero {
+    margin-top: 50px;
+    width: 90%;
+  }
+  .showcase--hero h1 {
+    font-size: 2rem;
+  }
+  .showcase--hero h2 {
+    font-size: 1.4rem;
+  }
+  .showcase--hero h3 {
+    font-size: 1rem;
+  }
+  .card {
+      height : 550px;
+  }
+  .card-content {
+      justify-content: center;
+  }
+  .card-text h1{
+      font-size : 1.8rem;
+  }
+  .card-text h2{
+      font-size : 1rem;
+  }
+  .card img {
+      width : 300px;
+  }
+  .card-content.two img {
+      width : 150px;
+  }
+  .img-container{
+      width : 100%;
+  }
+  .faq{
+      width : 100%;
+  }
+  .questions-list li{
+      font-size: 1.2rem;}
+      
+      .faq--header {
+        font-size : 1.5rem;
+    }
+    .faq h4 {
+        font-size : 1rem;
+        font-weight  :400;
+        width : 80%;
+        text-align: center;
+        margin : 0 auto;
+        margin-bottom : 10px;
+        margin-top : 50px;
+    }
+    .faq input{
+        width : 80%;
+    }
+  
+}
